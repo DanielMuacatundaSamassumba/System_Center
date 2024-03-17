@@ -1,0 +1,491 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+ html, body {
+    background-color: #F9F6EE;
+    height: 100%;
+ }
+  .container{
+     display:flex;
+     flex-direction: row;
+     height: 100%;
+  }
+  .container .content-first aside{
+    width: 14rem;
+    height:100vh;
+    background-color:#fff;
+     display: flex;
+      flex-direction: column;
+    align-items: center;
+    
+  }
+  .container .content-second .top-line{
+    width: 78vw;
+    height: 2rem;
+    background-color: #fff;
+     display: flex;
+     justify-content: space-between;
+
+  }
+  .container .content-second .top-line img{
+    width: 40px;
+    border-radius: 50%;
+    cursor:pointer;
+  }
+   .container .content-second .Resume-content{
+    margin-top: 10px;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-around;
+      color: #fff;
+   }
+   .container .content-second .Resume-content div{
+    background-color: #fff;
+    width: 12rem;
+    height: 7rem;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px #ddd;
+     color:#000;
+      display: flex;
+       justify-content: space-around;
+     align-items: center;
+      cursor: pointer;
+       transition: all ease 2s;
+        text-align: center;
+  }
+  .container .content-second .Resume-content div:hover{
+  background-color: #000;
+   color: #ffff;
+    transition: all ease 1s;
+    box-shadow: 2px 2px 2px 2px #ddd;
+  }
+  .container .content-second .Resume-content div i{
+    font-size: 30px;
+
+  }
+  .container .content-second .Resume-content p{
+     font-size: 12px;
+  }
+  .container .content-second .table{
+    width: 30rem;
+    height: 20rem;
+    background-color: #fff;
+
+    margin-left: 10px;
+    border-radius: 10px;
+  }
+  .container .content-first aside .logo{
+
+    height: 120px;
+  }
+  .container .content-first aside .logo img{
+  width: 150px;
+  }
+  .container .content-first aside ul{
+    width: 100%;
+    height: 60%;
+
+
+  }
+  .container .content-first aside ul div{
+    margin-left: 10px;
+     display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+
+  }
+  .container .content-first aside ul div a{
+   color:#000;
+  }
+  /* .container .content-first aside ul div li{} */
+  .container .content-first aside ul div:hover{
+   transform: scale(0.9);
+    cursor: pointer;
+  }
+
+
+  .container .content-first aside ul li{
+     display: block;
+      width: 94%;
+     padding: 12px;
+     margin-top: 10px;
+     margin-left: 10px;
+  }
+  .container .content-first aside ul li a{
+     display: block;
+      color: #000;
+       width: 100%;
+       padding: 2px;
+  }
+  .container .content-first aside ul li a i{
+    margin-right: 10px;
+  }
+  /* .container .content-first aside ul li a:hover{
+    display: block;
+    color: #fff;
+     width: 100%;
+  } */
+
+  .container .content-second .tables-content  {
+     display:  flex;
+      align-items: center;
+      justify-content: space-evenly;
+       margin-top: 90px;
+       width: 100%;
+  }
+  .container .content-second .tables-content .table table{
+     text-align: center;
+       width: 100%;
+   }
+   .container .content-second .tables-content .table table thead th{
+     padding: 10px;
+      margin-right:10px ;
+     border-bottom:  1px solid #000;
+   }
+   .container .content-second .tables-content .table table tbody td:hover{
+     cursor:pointer;
+  transform: scale(0.9);
+   }
+   .container .content-second .tables-content .table table tbody td{
+    padding: 10px;
+      margin-right:10px ;
+     border-bottom:  1px solid #ddd;
+   }
+   .container .content-second .tables-content .table table tbody td img{
+     width: 30px;
+      border-radius: 50%;
+   }
+   .container .content-second .tables-content .content-resume-curse{
+     height: 20rem;
+      width: 17rem;
+       background-color: #fff;
+       border-radius: 10px;
+   }
+   .container .content-second .tables-content .content-resume-curse table{
+    text-align: center;
+      width: 100%;
+  }
+  .container .content-second .tables-content .content-resume-curse table thead th{
+    padding:9px;
+     margin-right:10px ;
+    border-bottom:  1px solid #000;
+  }
+  .container .content-second .tables-content .content-resume-curse table tbody td{
+   padding: 8px;
+     margin-right:10px ;
+    border-bottom:  1px solid #ddd;
+  }
+   .container .content-second .tables-content .content-resume-curse table tbody td:hover{
+    transform: scale(.8);
+     cursor:pointer;
+   }
+  .container .content-second .top-line i {
+     font-size:24px;
+      cursor:pointer;
+  }
+
+@media screen  and ( max-width:600px){
+html, body{
+width:100%;
+overflow-x: hidden;
+ }
+ .container .content-first aside{
+   width: 3rem;
+   height: 20rem;
+ }
+ .container .content-first aside ul li{   display: none;}
+ .container .content-first aside ul li a{
+   display: none;
+ }
+ .container .content-first aside .logo img{
+  width: 60px;
+  }
+  .container .content-first aside ul{
+    display:flex;
+     flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 80px;
+  }
+  .container .content-first aside ul div {
+     display: flex;
+      justify-content: center;
+      align-items: center;
+       width: 100%;
+      margin-top: 14px;
+  }
+  .container .content-first aside ul div a.i{
+     margin-left: 0;
+     display: block;
+     width: 100%;
+     font-size: 20px;
+     text-align: center;
+  }
+  .container .content-second {
+     width: 100%;
+
+   
+  }
+  .container .content-first aside ul div a.i i{
+    margin-left: 0;
+    display: block;
+    width: 100%;
+  }
+  .container .content-second .Resume-content div i{
+     font-size: 20px;
+  }
+  .container .content-second .Resume-content{
+
+    height: 20rem;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-evenly;
+     align-items: center;
+      width: 18rem;
+       margin-left: 20px;
+  }
+  .container .content-second .Resume-content div {
+     width: 200px;
+     height: 80px;
+      font-size: 10px;
+  }
+  .container .content-second .top-line{
+    width: 100%   ;
+  }
+  .container .content-second .tables-content {
+     margin-bottom: 100px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-evenly;
+height: 60rem;
+ margin-top: 0;
+ margin-left: 20px;
+
+}
+  .container .content-second .tables-content .content-resume-curse {
+     margin-left: 0px;
+     font-size: 8px;
+     width: 13rem;
+     height: 11rem;
+     font-size: 8px;
+     margin-bottom: 200px;
+     margin-right: 100px;
+  }
+  .container .content-second .tables-content .table{
+     width: 12rem;
+    height: 17rem;
+     margin-right: 100px;
+  }
+  .container .content-second .tables-content .table table{
+    width: 4rem;
+     font-size: 8px;
+  
+   
+  }
+}
+@media screen  and ( min-width:600px) and (max-width:768px){
+  html, body{
+  width:100%;
+  overflow-x: hidden;
+   }
+   .container .content-first aside{
+     width: 3rem;
+     height: 20rem;
+   }
+   .container .content-first aside ul li{   display: none;}
+   .container .content-first aside ul li a{
+     display: none;
+   }
+   .container .content-first aside .logo img{
+    width: 60px;
+    }
+    .container .content-first aside ul{
+      display:flex;
+       flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      margin-bottom: 80px;
+    }
+    .container .content-first aside ul div {
+       display: flex;
+        justify-content: center;
+        align-items: center;
+         width: 100%;
+        margin-top: 14px;
+    }
+    .container .content-first aside ul div a.i{
+       margin-left: 0;
+       display: block;
+       width: 100%;
+       font-size: 20px;
+       text-align: center;
+    }
+    .container .content-second {
+       width: 100%;
+       
+    }
+    .container .content-first aside ul div a.i i{
+      margin-left: 0;
+      display: block;
+      width: 100%;
+    }
+    .container .content-second .Resume-content div i{
+       font-size: 20px;
+    }
+    .container .content-second .Resume-content{
+  
+      height: 20rem;
+       display: flex;
+       flex-direction: column;
+       justify-content: space-evenly;
+       align-items: center;
+        width: 18rem;
+    }
+    .container .content-second .Resume-content div {
+       width: 200px;
+       height: 80px;
+        font-size: 10px;
+    }
+    .container .content-second .top-line{
+      width: 100%   ;
+    }
+    .container .content-second .tables-content {
+       margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 60rem;
+   margin-top: 0;
+  
+  }
+    .container .content-second .tables-content .content-resume-curse {
+       margin-left: 0px;
+       font-size: 8px;
+       width: 13rem;
+       height: 11rem;
+       font-size: 8px;
+       margin-bottom: 200px;
+       margin-right: 100px;
+    }
+    .container .content-second .tables-content .table{
+       width: 12rem;
+      height: 17rem;
+  
+       margin-right: 100px;
+    }
+    .container .content-second .tables-content .table table{
+      width: 4rem;
+       font-size: 8px;
+    
+     
+    }
+  }
+  @media screen  and ( min-width:768px) and (max-width:992px){
+    html, body{
+    width:100%;
+    overflow-x: hidden;
+     }
+     .container .content-first aside{
+       width: 3rem;
+       height: 20rem;
+     }
+     .container .content-first aside ul li{   display: none;}
+     .container .content-first aside ul li a{
+       display: none;
+     }
+     .container .content-first aside .logo img{
+      width: 60px;
+      }
+      .container .content-first aside ul{
+        display:flex;
+         flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-bottom: 80px;
+      }
+      .container .content-first aside ul div {
+         display: flex;
+          justify-content: center;
+          align-items: center;
+           width: 100%;
+          margin-top: 14px;
+      }
+      .container .content-first aside ul div a.i{
+         margin-left: 0;
+         display: block;
+         width: 100%;
+         font-size: 20px;
+         text-align: center;
+      }
+      .container .content-second {
+         width: 100%;
+       
+      }
+      .container .content-first aside ul div a.i i{
+        margin-left: 0;
+        display: block;
+        width: 100%;
+      }
+      .container .content-second .Resume-content div i{
+         font-size: 20px;
+      }
+      .container .content-second .Resume-content{
+    
+        height: 20rem;
+         display: flex;
+         flex-direction: column;
+         justify-content: space-evenly;
+         align-items: center;
+          width: 40rem;
+      }
+      .container .content-second .Resume-content div {
+         width: 200px;
+         height: 80px;
+          font-size: 10px;
+      }
+      .container .content-second .top-line{
+        width: 100%   ;
+      }
+      .container .content-second .tables-content {
+         margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 60rem;
+     margin-top: 0;
+    
+    }
+      .container .content-second .tables-content .content-resume-curse {
+         margin-left: 0px;
+         font-size: 8px;
+         width: 13rem;
+         height: 11rem;
+         font-size: 8px;
+         margin-bottom: 200px;
+         margin-right: 100px;
+      }
+      .container .content-second .tables-content .table{
+         width: 12rem;
+        height: 17rem;
+    
+         margin-right: 100px;
+      }
+      .container .content-second .tables-content .table table{
+        width: 4rem;
+         font-size: 8px;
+      
+       
+      }
+    }
+   
+    
+  

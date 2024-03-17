@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+ html, body {
+    background-color: #F9F6EE;
+    height: 100%;
+ }
+ .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+ }
+ .container .content-form{
+    background-color: #ffff;
+    width: 20rem;
+    height: 30rem;
+     display: flex;
+     flex-direction: column;
+     border-radius: 5px;
+
+     align-items: center;
+ }
+  .container .content-form h3{
+    text-align: center;
+  margin-bottom: 30px;
+  }
+ .container .content-form img{
+    width: 11rem;
+
+ }
+ .container .content-form .input_email input{
+    width: 15rem;
+    padding:  8px;
+    margin-bottom: 10px;
+    outline: none;
+ }
+ .container .content-form .input_email i{
+font-size: 20px;
+ }
+ .container .content-form .input_password input{
+    outline: none;
+    width: 15rem;
+    padding:  8px;
+ }
+ .container .content-form .input_password i{
+    font-size: 23px;
+}
+.container form {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+}
+.container form .btn{
+    display: flex;
+    justify-content: end;
+    height: 50px;
+
+}
+.container form .btn button{
+    background-color: rgb(83, 83, 163);
+    border:none;
+     color: #fff;
+    margin-top: 10px;
+    width: 15rem;
+    padding:  10px;
+    cursor: pointer;
+}
+ .container form .show_passsword{
+    margin-left: 25px;
+    margin-top: 20px;
+ }
+
+ .container form .show_passsword label{
+    margin-left: 5px;
+ }
